@@ -1,0 +1,229 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CiniciFinal.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CiniciFinal.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\manage\\assets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\manage\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\css\\sb-admin.css",
+      "PackagePath": "staticwebassets\\manage\\assets\\css\\sb-admin.css"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\core.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\core.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\fixed-width.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\font-awesome.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\icons.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\icons.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\larger.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\larger.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\list.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\list.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\mixins.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\path.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\path.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\spinning.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\spinning.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\stacked.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\less\\variables.less",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\less\\variables.less"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\_larger.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\_list.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\_path.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\_spinning.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\_spinning.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\font-awesome\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\manage\\assets\\font-awesome\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\flot\\chart-data-flot.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\flot\\chart-data-flot.js"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\flot\\excanvas.min.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\flot\\excanvas.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\flot\\jquery.flot.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\flot\\jquery.flot.js"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\flot\\jquery.flot.pie.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\flot\\jquery.flot.pie.js"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\flot\\jquery.flot.resize.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\flot\\jquery.flot.resize.js"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\flot\\jquery.flot.tooltip.min.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\flot\\jquery.flot.tooltip.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\jquery-1.10.2.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\jquery-1.10.2.js"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\morris\\chart-data-morris.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\morris\\chart-data-morris.js"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\tablesorter\\jquery.tablesorter.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\tablesorter\\jquery.tablesorter.js"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\tablesorter\\tables.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\tablesorter\\tables.js"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\sliders\\1f9e08a4-e37f-4a05-a938-0a6dd29e6329IMG-20230503-WA0010.jpg",
+      "PackagePath": "staticwebassets\\uploads\\sliders\\1f9e08a4-e37f-4a05-a938-0a6dd29e6329IMG-20230503-WA0010.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\sliders\\c2f30bab-1a10-412f-8bc4-58449119a115IMG_20230413_113251 (1).jpg",
+      "PackagePath": "staticwebassets\\uploads\\sliders\\c2f30bab-1a10-412f-8bc4-58449119a115IMG_20230413_113251 (1).jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.CiniciFinal.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.CiniciFinal.props",
+      "PackagePath": "build\\CiniciFinal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.CiniciFinal.props",
+      "PackagePath": "buildMultiTargeting\\CiniciFinal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.CiniciFinal.props",
+      "PackagePath": "buildTransitive\\CiniciFinal.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

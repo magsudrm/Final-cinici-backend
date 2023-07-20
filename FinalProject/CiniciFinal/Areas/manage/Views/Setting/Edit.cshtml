@@ -1,0 +1,32 @@
+﻿@model Setting
+
+<div class="container-fluid">
+
+	<div class="d-sm-flex align-items-center justify-content-between mb-4">
+		<h1 class="h3 mb-0 text-gray-800">Slider Create</h1>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-md-8">
+			<form asp-action="edit" method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<label disabled asp-for="Key">Key</label>
+					<input asp-for="Key" type="text" class="form-control" placeholder="Enter Key">
+					<span class="text-danger" asp-validation-for="Key"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="Value">Title2</label>
+					<input asp-for="Value" type="text" class="form-control" placeholder="Enter Value">
+					<span class="text-danger" asp-validation-for="Value"></span>
+				</div>
+				<div class="form-group">
+					<label>Image File</label>
+					<input asp-for="SettingFile" accept="image/*" class="form-control" placeholder="Enter ImageFile">
+					<span class="text-danger" asp-validation-for="SettingFile"></span>
+				</div>
+				<img width="200" src="~/uploads/setiings/@Model.Value" />
+
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>

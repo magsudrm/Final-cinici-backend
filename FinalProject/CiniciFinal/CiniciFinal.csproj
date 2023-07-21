@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -21,6 +21,7 @@
     <Folder Include="wwwroot\uploads\focus\" />
     <Folder Include="wwwroot\uploads\collections\" />
     <Folder Include="wwwroot\uploads\categories\" />
+    <Folder Include="wwwroot\uploads\brands\" />
     <Folder Include="wwwroot\uploads\products\" />
     <Folder Include="wwwroot\uploads\settings\" />
     <Folder Include="wwwroot\uploads\sliders\" />

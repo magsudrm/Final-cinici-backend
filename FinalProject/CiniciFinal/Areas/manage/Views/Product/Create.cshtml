@@ -1,4 +1,5 @@
-﻿@model Product
+﻿@using CiniciFinal.Enums;
+@model Product
 <div class="container-fluid">
 </div>
 
@@ -66,7 +67,11 @@
 				<div class="col-md-3">
 					<div class="form-group">
 						<label asp-for="Gender">Gender</label>
-						<input asp-for="Gender" class="form-control">
+						<select asp-for="Gender">
+							<option value="@Gender.Male">Male</option>
+							<option value="@Gender.Famale">Female</option>
+							<option value="@Gender.Child">Child</option>
+						</select>
 						<span class="text-danger" asp-validation-for="Gender"></span>
 					</div>
 				</div>

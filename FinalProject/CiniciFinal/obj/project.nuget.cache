@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rr3XKfb/AKElYXpWb2uocqfKRK/X+adW4s0IYEmOitWW8cnKiQeKSSESsvE2mR7hOwndD1Z1o6cZMCM2u8ugBA==",
+  "dgSpecHash": "hrAw9hNdU1TwIlL4fTQa/ZZRbtzLBKrzVs8npo5BuX+eUhMSPmmrdC68PB4suMJCRerC8QWBY2NND5+q3DdVaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\CiniciFinal.csproj",
+  "projectFilePath": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\CiniciFinal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maqsud\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Maqsud\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

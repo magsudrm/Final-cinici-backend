@@ -1,46 +1,241 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CiniciFinal</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/CiniciFinal.styles.css" asp-append-version="true" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cinici.az</title>
+    <link rel="stylesheet" href="~/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="~/assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CiniciFinal</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+        <div class="container">
+            <div class="header-top row">
+
+                <div class="header-top-middle col-lg-2 col-md-2">
+                    <div>
+                        <img src="~/assets/images/icons/Logo.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="header-middle col-lg-7 col-md-7">
+                    <div class="dropdown-qadin">
+                        <a class="a-qadin" href="">QADIN</a>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3">
+                                    <a href="">Geyim</a>
+                                    <a href="">Gödəkçə</a>
+                                    <a href="">Palto və Plaş</a>
+                                    <a href="">Kostyum və Pencək</a>
+                                    <a href="">Don</a>
+                                    <a href="">Ətək</a>
+                                    <a href="">Köynək</a>
+                                    <a href="">Bluz</a>
+                                    <a href="">Sviter və Jaket</a>
+                                    <a href="">Şalvar</a>
+                                    <a href="">Jeans Şalvar</a>
+                                    <a href="">Dəri</a>
+                                    <a href="">Alt Paltarı və Ev Geyimi</a>
+                                    <a href="">Böyük ölçülü geyimlər</a>
+                                    <a href="">Digər</a>
+                                </div>
+                                <div class="col-lg-3 col-md-3">
+                                    <a href="">Ayaqqabı</a>
+                                    <a href="">Klassik</a>
+                                    <a href="">Casual</a>
+                                    <a href="">Sport</a>
+                                </div>
+                                <div class="col-lg-3 col-md-3">
+                                    <a href="">Çanta</a>
+                                    <a href="">Bel çantası</a>
+                                    <a href="">Klassik çanta</a>
+                                    <a href="">Kiçik əl çantası/Clutch</a>
+                                </div>
+                                <div class="col-lg-3 col-md-3">
+                                    <a href="">Aksesuarlar</a>
+                                    <a href="">Corab</a>
+                                    <a href="">Pulqabı</a>
+                                    <a href="">Şərf və yaylıq</a>
+                                    <a href="">Kəmər</a>
+                                    <a href="">Digər</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-kisi">
+                        <a class="a-kisi" href="">KİŞİ</a>
+                        <div class="dropdown-content-kisi">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <a href="">Geyim</a>
+                                    <a href="">Gödəkçə</a>
+                                    <a href="">Palto və Plaş</a>
+                                    <a href="">Kostyum və Pencək</a>
+                                    <a href="">Polo və T-Shirt</a>
+                                    <a href="">Köynək</a>
+                                    <a href="">Şalvar</a>
+                                    <a href="">Sviter və Jaket</a>
+                                    <a href="">Dəri</a>
+                                    <a href="">Alt Paltarı və Ev Geyimi</a>
+                                    <a href="">Digər</a>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <a href="">Ayaqqabı</a>
+                                    <a href="">Klassik</a>
+                                    <a href="">Casual</a>
+                                    <a href="">Sport</a>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <a href="">Aksesuarlar</a>
+                                    <a href="">Corab</a>
+                                    <a href="">Çantalar</a>
+                                    <a href="">Kəmər</a>
+                                    <a href="">Qalstuk</a>
+                                    <a href="">Pulqabı</a>
+                                    <a href="">Şərf</a>
+                                    <a href="">Papaqlar</a>
+                                    <a href="">Digər</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-usaq">
+                        <a class="a-usaq" href="">UŞAQ</a>
+                        <div class="dropdown-content-usaq">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <a href="">Geyim</a>
+                                    <a href="">Gödəkçə</a>
+                                    <a href="">Palto və Plaş</a>
+                                    <a href="">Kostyum və Pencək</a>
+                                    <a href="">Polo və T-Shirt</a>
+                                    <a href="">Köynək</a>
+                                    <a href="">Şalvar</a>
+                                    <a href="">Sviter və Jaket</a>
+                                    <a href="">Dəri</a>
+                                    <a href="">Alt Paltarı və Ev Geyimi</a>
+                                    <a href="">Digər</a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="">Ayaqqabı</a>
+                                    <a href="">Klassik</a>
+                                    <a href="">Casual</a>
+                                    <a href="">Sport</a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="">Aksesuarlar</a>
+                                    <a href="">Corab</a>
+                                    <a href="">Çantalar</a>
+                                    <a href="">Kəmər</a>
+                                    <a href="">Qalstuk</a>
+                                    <a href="">Pulqabı</a>
+                                    <a href="">Şərf</a>
+                                    <a href="">Papaqlar</a>
+                                    <a href="">Digər</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-aksesuar">
+                        <a class="a-aksesuar" href="">AKSESUARLAR</a>
+                        <div class="dropdown-content-aksesuar">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <a href="">Yol çantaları</a>
+                                    <a href="">Bel çantaları</a>
+                                    <a href="">Ayaqqabıya Qulluq</a>
+                                    <a href="">Çətir</a>
+                                    <a href="">Digər</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-endirimli">
+                        <a class="a-endirimli" href="">ENDİRİMLİ MALLAR</a>
+                        <div class="dropdown-content-endirimli">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <a href="">Qadın</a>
+                                    <a href="">Kişi</a>
+                                    <a href="">Uşaq</a>
+                                    <a href="">Aksesuarlar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-top-right col-lg-3 col-md-3">
+                    <div class="header-icons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
+    @RenderBody()
+
+    <footer>
         <div class="container">
-            &copy; 2023 - CiniciFinal - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+            <div class="row justify-content-between">
+                <div class="col-lg-2">
+                    <h5>ŞİRKƏT</h5>
+                    <a href="">Haqqımızda</a>
+                    <a href="">Mağazalar</a>
+                    <a href="">Əlaqə</a>
+                </div>
+                <div class="col-lg-2">
+                    <h5>HESAB</h5>
+                    <a href="">Hesabım</a>
+                    <a href="">Hesab yarat</a>
+                    <a href="">Sifarişlər</a>
+                    <a href="">Bonuslar</a>
+                </div>
+                <div class="col-lg-2">
+                    <h5>ALICILAR</h5>
+                    <a href="">FAQ</a>
+                    <a href="">Geri qaytarma</a>
+                    <a href="">Şərtlər və Qaydalar</a>
+                    <a href="">Gizlilik siyasəti</a>
+                </div>
+                <div class="col-lg-2">
+                    <h5>DƏSTƏK</h5>
+                    <a href="">Müştəri xidmətləri</a>
+                    <a href="">*1515</a>
+                    <a href="">info@cinici.az</a>
+                </div>
+                <div class="col-lg-4">
+                    <h5>ABUNƏ OL</h5>
+                    <form class="row" action="">
+                        <input placeholder="E mail daxil edin" type="text">
+                        <button>Göndər</button>
+                    </form>
+                    <div>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="~/assets/js/slick.min.js"></script>
+    <script src="~/assets/js/main.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

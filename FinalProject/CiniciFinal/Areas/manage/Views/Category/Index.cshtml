@@ -8,7 +8,7 @@
 <div class="container-fluid">
 
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Tags</h1>
+        <h1 class="h3 mb-0 text-gray-800">Categories</h1>
         <a asp-action="create" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"> Create Category</a>
     </div>
     <div class="row d-flex justify-content-center">
@@ -30,7 +30,7 @@
                                 <td>@item.Name</td>
 							<td>
 								<a asp-action="edit" asp-route-id="@item.Id" class="btn btn-info">Edit</a>
-								@if (User.Identity.IsAuthenticated && User.IsInRole("superadmin"))
+								@if (User.Identity.IsAuthenticated && User.IsInRole("Superadmin"))
 								{
 									<a asp-action="delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
 								}

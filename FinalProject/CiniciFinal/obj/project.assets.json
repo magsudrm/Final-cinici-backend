@@ -10925,11 +10925,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\CiniciFinal.csproj",
+      "projectUniqueName": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\CiniciFinal.csproj",
       "projectName": "CiniciFinal",
-      "projectPath": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\CiniciFinal.csproj",
+      "projectPath": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\CiniciFinal.csproj",
       "packagesPath": "C:\\Users\\Maqsud\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\FinalProject\\CiniciFinal\\obj\\",
+      "outputPath": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Maqsud\\AppData\\Roaming\\NuGet\\NuGet.Config",

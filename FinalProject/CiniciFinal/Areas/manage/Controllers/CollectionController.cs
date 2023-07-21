@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CiniciFinal.Areas.manage.Controllers
 {
-    public class CollectionController : Controller
+	[Area("manage")]
+
+	public class CollectionController : Controller
     {
 		private readonly CiniciDbContext _context;
 		private readonly IWebHostEnvironment _env;
@@ -47,7 +49,7 @@ namespace CiniciFinal.Areas.manage.Controllers
 			if (!ModelState.IsValid)
 				return View();
 
-			if (_context.Focuses.Any(x => x.Title == collection.Title))
+			if (_context.Collections.Any(x => x.Title == collection.Title))
 			{
 				ModelState.AddModelError("Title", "The Title already taken");
 				return View();
@@ -90,7 +92,7 @@ namespace CiniciFinal.Areas.manage.Controllers
 			{
 				string oldFileName = existCollection.Image;
 				existCollection.Image = FileManager.Save(collection.CollectionImage, _env.WebRootPath + "/uploads/collections");
-				FileManager.Delete(_env.WebRootPath + "/uploads/focus", oldFileName);
+				FileManager.Delete(_env.WebRootPath + "/uploads/collcetions", oldFileName);
 			}
 			_context.SaveChanges();
 			return RedirectToAction("index");

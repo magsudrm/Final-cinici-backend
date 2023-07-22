@@ -1,12 +1,16 @@
 ﻿using CiniciFinal.DAL;
+using CiniciFinal.Enums;
 using CiniciFinal.Models;
 using CiniciFinal.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CiniciFinal.Areas.manage.Controllers
 {
 	[Area("manage")]
-	public class CategoryController : Controller
+    [Authorize(Roles = "Admin,Superadmin")]
+
+    public class CategoryController : Controller
     {
 		private readonly CiniciDbContext _context;
 		public CategoryController(CiniciDbContext context)
@@ -16,9 +20,7 @@ namespace CiniciFinal.Areas.manage.Controllers
 
 		public IActionResult Index(int page = 1, int size = 10)
 		{
-			var query = _context.Categories
-			.Skip((page - 1) * 10)
-				.Take(10);
+			var query = _context.Categories;
 			return View(PaginatedList<Category>.Create(query, page, size));
 		}
 		public IActionResult Create()

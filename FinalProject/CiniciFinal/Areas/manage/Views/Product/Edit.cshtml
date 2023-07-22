@@ -100,11 +100,24 @@
 						<input asp-for="PosterFile" accept="image/*" class="form-control">
 						<span class="text-danger" asp-validation-for="PosterFile"></span>
 					</div>
+					<div class="img-box">
+						<img width="150" src="~/uploads/products/@Model.ProductImages.FirstOrDefault(x=>x.PosterStatus==true)?.Image" />
+					</div>
 				</div>
 				<div class="form-group col-md-6">
 					<label>Image Files</label>
 					<input asp-for="ImageFiles" accept="image/*" class="form-control" placeholder="Enter ImageFile">
 					<span class="text-danger" asp-validation-for="ImageFiles"></span>
+					<div class="row mt-3">
+						@foreach (var item in Model.ProductImages.Where(x => x.PosterStatus == null))
+						{
+							<div class=" col-md-3 img-box">
+								<span class="remove-img-box">X</span>
+								<input type="hidden" name="HouseImageIds[]" value="@item.Id">
+								<img width="150" src="~/uploads/products/@item.Image" />
+							</div>
+						}
+					</div>
 				</div>
 			</div>
 			<div>

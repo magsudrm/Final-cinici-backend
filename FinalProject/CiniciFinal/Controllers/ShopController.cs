@@ -1,4 +1,5 @@
 ﻿using CiniciFinal.DAL;
+using CiniciFinal.Enums;
 using CiniciFinal.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -16,14 +17,35 @@ namespace CiniciFinal.Controllers
             _context = context;
             _userManager = userManager;
         }
-        public IActionResult Index()
+        public IActionResult Index(int gender)
         {
-            return View();
+            List<Product> products = _context.Products.Include(x => x.ProductImages).ToList();
+
+            if (gender == 1)
+            {
+                products = products.Where(x => x.Gender == Gender.Male).ToList();
+            }
+            if (gender == 2)
+            {
+                products = products.Where(x => x.Gender == Gender.Famale).ToList();
+            }
+            if (gender == 3)
+            {
+                products = products.Where(x => x.Gender == Gender.Child).ToList();
+            }
+            else
+            {
+                products = products;
+            }
+            return View(products);
         }
 
-        public IActionResult Detail()
+        public IActionResult Detail(int id)
         {
-            return View();
+            if(id<=0) return NotFound();
+            Product product = _context.Products.Include(x => x.ProductImages).FirstOrDefault(x=>x.Id==id);
+            if (product is null) return NotFound();
+            return View(product);
         }
 
         public async Task<IActionResult> AddBasket(int id, string size)

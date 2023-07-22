@@ -122,10 +122,15 @@ namespace CiniciFinal.Controllers
                 ModelState.AddModelError("", "Username or password is incorrect");
                 return Redirect(Request.Headers["Referer"].ToString());
             }
-            return Redirect(Request.Headers["Referer"].ToString());
+            return RedirectToAction("Index", "Home");
 
         }
 
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+        [HttpPost]
         public async Task<IActionResult> ForgotPassword(AccountVM account)
         {
             if (account.User.Email is null) return Redirect(Request.Headers["Referer"].ToString());
@@ -198,7 +203,11 @@ namespace CiniciFinal.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-
+        public async Task<IActionResult> LogOut()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction(nameof(Login));
+        }
 
     }
 }

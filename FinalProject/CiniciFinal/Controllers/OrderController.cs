@@ -65,7 +65,7 @@ namespace CiniciFinal.Controllers
                 AppUserId = user.Id,
                 Number = orderVM.Number,
                 Message = orderVM.Message,
-                Status = false
+                Status = null
             };
 
 
@@ -78,7 +78,8 @@ namespace CiniciFinal.Controllers
                     Price = (double)item.Product.Price,
                     ProductId = item.ProductId,
                     Quantity = item.Count,
-                    Order = order
+                    Order = order,
+                    Size= item.Size,
                 };
                 order.TotalPrice += (double)item.Product.Price * item.Count;
                 _context.OrderItems.Add(orderItem);

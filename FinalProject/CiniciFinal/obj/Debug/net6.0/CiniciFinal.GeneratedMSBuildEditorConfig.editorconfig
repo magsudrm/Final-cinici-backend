@@ -72,6 +72,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcbWFuYWdlXFZpZXdzXENvbGxlY3Rpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Maqsud/Desktop/Homeworks/Final-cinici-backend/FinalProject/CiniciFinal/Areas/manage/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcbWFuYWdlXFZpZXdzXENvbnRhY3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Maqsud/Desktop/Homeworks/Final-cinici-backend/FinalProject/CiniciFinal/Areas/manage/Views/Contact/Replace.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcbWFuYWdlXFZpZXdzXENvbnRhY3RcUmVwbGFjZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Maqsud/Desktop/Homeworks/Final-cinici-backend/FinalProject/CiniciFinal/Areas/manage/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcbWFuYWdlXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,6 +98,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Maqsud/Desktop/Homeworks/Final-cinici-backend/FinalProject/CiniciFinal/Areas/manage/Views/Focus/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcbWFuYWdlXFZpZXdzXEZvY3VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Maqsud/Desktop/Homeworks/Final-cinici-backend/FinalProject/CiniciFinal/Areas/manage/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcbWFuYWdlXFZpZXdzXE9yZGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Maqsud/Desktop/Homeworks/Final-cinici-backend/FinalProject/CiniciFinal/Areas/manage/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcbWFuYWdlXFZpZXdzXE9yZGVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Maqsud/Desktop/Homeworks/Final-cinici-backend/FinalProject/CiniciFinal/Areas/manage/Views/Product/Create.cshtml]
@@ -144,6 +160,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcbWFuYWdlXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Maqsud/Desktop/Homeworks/Final-cinici-backend/FinalProject/CiniciFinal/Views/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Maqsud/Desktop/Homeworks/Final-cinici-backend/FinalProject/CiniciFinal/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -186,6 +206,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Maqsud/Desktop/Homeworks/Final-cinici-backend/FinalProject/CiniciFinal/Views/Home/Refund.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWZ1bmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Maqsud/Desktop/Homeworks/Final-cinici-backend/FinalProject/CiniciFinal/Views/Order/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2hlY2tvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Maqsud/Desktop/Homeworks/Final-cinici-backend/FinalProject/CiniciFinal/Views/Shared/Error.cshtml]

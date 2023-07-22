@@ -1,4 +1,4 @@
-﻿
+﻿@model Product
 
     <section class="section-1-detail">
         <div class="container">
@@ -6,24 +6,22 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="slider col-lg-3">
-                            <div class="thumbnail">
-                                <img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt="">
+                            @foreach (var item in Model.ProductImages)
+                        {
+                                  <div class="thumbnail">
+                                <img src="~/uploads/products/@item.Image" alt="">
                             </div>
-                            <div class="thumbnail">
-                                <img src="assets/images/products/49ba753b73add672dcc8f828e4461adf.jpg" alt="">
-                            </div>
-                            <div class="thumbnail">
-                                <img src="assets/images/products/4d9e6d26ce35c9ca815faa5b1bdef892.jpg" alt="">
-                            </div>
+                        }
+                       
                         </div>
                         <div class="col-lg-9" id="main-div"></div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div>
-                        <p class="name-p">Blackspade Qadın Alt Paltarı</p>
-                        <p class="code-p">Code: 58527</p>
-                        <span class="price-span">₼ 18,00</span>
+                        <p class="name-p">@Model.Name</p>
+                        <p class="code-p">Code: @Model.Id</p>
+                        <span class="price-span">₼ @Model.Price</span>
                         <hr>
                     </div>
                     <div>
@@ -32,7 +30,7 @@
                         <hr>
                     </div>
                 <form asp-controller="shop" asp-action="AddBasket">
-                    <input type="text" id="size-s" name="id" value="1">
+                    <input type="hidden" id="size-s" name="id" value="@Model.Id">
 
                     <div class="size-select">
                         <p>Ölçü:</p>

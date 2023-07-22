@@ -1,13 +1,17 @@
 ﻿using CiniciFinal.DAL;
+using CiniciFinal.Enums;
 using CiniciFinal.Helpers;
 using CiniciFinal.Models;
 using CiniciFinal.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CiniciFinal.Areas.manage.Controllers
 {
     [Area("manage")]
+    [Authorize(Roles = "Admin,Superadmin")]
+
     public class SliderController : Controller
     {
         private readonly CiniciDbContext _context;
@@ -22,7 +26,7 @@ namespace CiniciFinal.Areas.manage.Controllers
         public IActionResult Index(int page = 1, int size = 10)
         {
             var data = _context.Sliders.OrderBy(x => x.Order).Skip((page - 1) * 6)
-                .Take(6);
+                .Take(10);
             return View(PaginatedList<Slider>.Create(data, page, size));
 
         }

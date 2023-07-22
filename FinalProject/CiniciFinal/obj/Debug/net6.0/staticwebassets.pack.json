@@ -317,6 +317,10 @@
       "PackagePath": "staticwebassets\\manage\\assets\\js\\jquery-1.10.2.js"
     },
     {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\manage\\assets\\js\\main.js"
+    },
+    {
       "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\manage\\assets\\js\\morris\\chart-data-morris.js",
       "PackagePath": "staticwebassets\\manage\\assets\\js\\morris\\chart-data-morris.js"
     },
@@ -333,16 +337,40 @@
       "PackagePath": "staticwebassets\\manage\\assets\\template\\verifyemail.html"
     },
     {
-      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\collections\\03a2e233-ef41-483d-9dea-91dc26f01801IMG_20230413_113251.jpg",
-      "PackagePath": "staticwebassets\\uploads\\collections\\03a2e233-ef41-483d-9dea-91dc26f01801IMG_20230413_113251.jpg"
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\collections\\841b3dcf-9fbc-49af-9704-7df5ced71982Qadin-kollek.png",
+      "PackagePath": "staticwebassets\\uploads\\collections\\841b3dcf-9fbc-49af-9704-7df5ced71982Qadin-kollek.png"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\collections\\ab7ca89e-df49-4023-96ff-7a6029a83a99Usaq-kollek.png",
+      "PackagePath": "staticwebassets\\uploads\\collections\\ab7ca89e-df49-4023-96ff-7a6029a83a99Usaq-kollek.png"
     },
     {
       "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\collections\\c31d0258-e9a8-4e86-b0aa-d4bf955d28eaIMG-20230503-WA0008.jpg",
       "PackagePath": "staticwebassets\\uploads\\collections\\c31d0258-e9a8-4e86-b0aa-d4bf955d28eaIMG-20230503-WA0008.jpg"
     },
     {
-      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\focus\\1a3b37b7-4bcb-40af-a311-283830f880dcIMG-20230506-WA0000.jpeg",
-      "PackagePath": "staticwebassets\\uploads\\focus\\1a3b37b7-4bcb-40af-a311-283830f880dcIMG-20230506-WA0000.jpeg"
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\collections\\c6507807-720a-47a3-a0d7-4dfdc3ce3bf4Kisi-kollek.png",
+      "PackagePath": "staticwebassets\\uploads\\collections\\c6507807-720a-47a3-a0d7-4dfdc3ce3bf4Kisi-kollek.png"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\focus\\cee78b9c-9639-4937-8c7e-f21876bb3b84bags.png",
+      "PackagePath": "staticwebassets\\uploads\\focus\\cee78b9c-9639-4937-8c7e-f21876bb3b84bags.png"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\focus\\e42cae40-61a7-4160-908e-3430ecf6c7aeman-acc (1).png",
+      "PackagePath": "staticwebassets\\uploads\\focus\\e42cae40-61a7-4160-908e-3430ecf6c7aeman-acc (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\034d704d-9c9b-47ec-ae26-6fafd62d27b39529-SOM05.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\034d704d-9c9b-47ec-ae26-6fafd62d27b39529-SOM05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\17b52a9e-a571-425d-a36f-1e3c187a633585366-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\17b52a9e-a571-425d-a36f-1e3c187a633585366-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\1ff4ed1b-91a2-4aa7-b720-f792259285fc84508-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\1ff4ed1b-91a2-4aa7-b720-f792259285fc84508-1.jpg"
     },
     {
       "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\21532674-6d75-40c8-b372-e3a7dc614718IMG_20230413_113251.jpg",
@@ -351,6 +379,22 @@
     {
       "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\247cc6f6-9629-43a4-884b-93135f6816b8IMG_20230413_113251.jpg",
       "PackagePath": "staticwebassets\\uploads\\products\\247cc6f6-9629-43a4-884b-93135f6816b8IMG_20230413_113251.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\25eb3c9f-d856-438c-a4ba-dd35c4c148b685366-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\25eb3c9f-d856-438c-a4ba-dd35c4c148b685366-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\49117ad4-99d4-42fb-a8f7-c1897ebcd7f584508-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\49117ad4-99d4-42fb-a8f7-c1897ebcd7f584508-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\53b343cf-63c5-47d1-9b57-3eb0ed0eee4d84568-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\53b343cf-63c5-47d1-9b57-3eb0ed0eee4d84568-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\57e715a3-868b-4f8e-a046-067f9d4787db84568-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\57e715a3-868b-4f8e-a046-067f9d4787db84568-1.jpg"
     },
     {
       "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\6a5a16fe-050a-4267-ad0f-b083f555382cIMG-20230503-WA0010.jpg",
@@ -365,16 +409,52 @@
       "PackagePath": "staticwebassets\\uploads\\products\\9281a215-a9e2-4f3c-abff-de92947883e3IMG-20230503-WA0008.jpg"
     },
     {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\973ca01a-ce21-4d41-810b-8a3aa3fb9d1385366-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\973ca01a-ce21-4d41-810b-8a3aa3fb9d1385366-1.jpg"
+    },
+    {
       "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\a90b459c-28d2-428c-b27a-f5bcd4946759IMG_20230413_113251.jpg",
       "PackagePath": "staticwebassets\\uploads\\products\\a90b459c-28d2-428c-b27a-f5bcd4946759IMG_20230413_113251.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\c69beb0e-41c4-4b72-94a0-21a57c509ce983999-83960-1_GU8Hsdj.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\c69beb0e-41c4-4b72-94a0-21a57c509ce983999-83960-1_GU8Hsdj.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\cbff833f-0bf8-444c-ab32-e73a87d12401september_336.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\cbff833f-0bf8-444c-ab32-e73a87d12401september_336.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\ce687b6d-d099-4435-911a-f9f85ee0e8e7september_334.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\ce687b6d-d099-4435-911a-f9f85ee0e8e7september_334.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\ced547c0-6242-47db-82f3-a4c092616ed784508-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\ced547c0-6242-47db-82f3-a4c092616ed784508-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\ebde2d45-d5e2-48a3-8779-41b2cc7de1f784508-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\ebde2d45-d5e2-48a3-8779-41b2cc7de1f784508-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\products\\f943a7df-d3e7-4e01-aac1-8284b5ac922bseptember_335.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\f943a7df-d3e7-4e01-aac1-8284b5ac922bseptember_335.jpg"
     },
     {
       "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\sliders\\1f9e08a4-e37f-4a05-a938-0a6dd29e6329IMG-20230503-WA0010.jpg",
       "PackagePath": "staticwebassets\\uploads\\sliders\\1f9e08a4-e37f-4a05-a938-0a6dd29e6329IMG-20230503-WA0010.jpg"
     },
     {
-      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\sliders\\c2f30bab-1a10-412f-8bc4-58449119a115IMG_20230413_113251 (1).jpg",
-      "PackagePath": "staticwebassets\\uploads\\sliders\\c2f30bab-1a10-412f-8bc4-58449119a115IMG_20230413_113251 (1).jpg"
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\sliders\\ad0772a9-0059-43c5-a662-b0833ed44528slider1.png",
+      "PackagePath": "staticwebassets\\uploads\\sliders\\ad0772a9-0059-43c5-a662-b0833ed44528slider1.png"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\sliders\\da120c9d-182a-405a-b07d-233a17306dc8slider4.png",
+      "PackagePath": "staticwebassets\\uploads\\sliders\\da120c9d-182a-405a-b07d-233a17306dc8slider4.png"
+    },
+    {
+      "Id": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Final-cinici-backend\\FinalProject\\CiniciFinal\\wwwroot\\uploads\\sliders\\e1c57e09-1b24-4e6a-a28f-ccc0c7fb1c25slider2.png",
+      "PackagePath": "staticwebassets\\uploads\\sliders\\e1c57e09-1b24-4e6a-a28f-ccc0c7fb1c25slider2.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.CiniciFinal.Microsoft.AspNetCore.StaticWebAssets.props",

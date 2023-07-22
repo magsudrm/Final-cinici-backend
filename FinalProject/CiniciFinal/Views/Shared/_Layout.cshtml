@@ -1,4 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@using CiniciFinal.Enums;
+@inject CiniciFinal.Service.LayoutService layoutService
+@{
+    AppUser users = await layoutService.GetUserFullName();
+    BasketVm basket = layoutService.GetBaskets();
+    List<Product> products = layoutService.GetProducts();
+
+}
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,6 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 <body>
@@ -21,13 +30,15 @@
 
                 <div class="header-top-middle col-lg-2 col-md-2">
                     <div>
-                        <img src="~/assets/images/icons/Logo.svg" alt="">
+                      <a asp-controller="home" asp-action="index">
+                            <img src="~/assets/images/icons/Logo.svg" alt="">
+                      </a>
                     </div>
                 </div>
 
                 <div class="header-middle col-lg-7 col-md-7">
                     <div class="dropdown-qadin">
-                        <a class="a-qadin" href="">QADIN</a>
+                        <a class="a-qadin" asp-controller="shop" asp-action="index" asp-route-gender="2">QADIN</a>
                         <div class="dropdown-content">
                             <div class="row">
                                 <div class="col-lg-3 col-md-3">
@@ -71,7 +82,7 @@
                         </div>
                     </div>
                     <div class="dropdown-kisi">
-                        <a class="a-kisi" href="">KİŞİ</a>
+                        <a class="a-kisi" asp-controller="shop" asp-action="index" asp-route-gender="1">KİŞİ</a>
                         <div class="dropdown-content-kisi">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4">
@@ -108,7 +119,7 @@
                         </div>
                     </div>
                     <div class="dropdown-usaq">
-                        <a class="a-usaq" href="">UŞAQ</a>
+                        <a class="a-usaq" asp-controller="shop" asp-action="index" asp-route-gender="3" >UŞAQ</a>
                         <div class="dropdown-content-usaq">
                             <div class="row">
                                 <div class="col-lg-4">
@@ -175,9 +186,26 @@
 
                 <div class="header-top-right col-lg-3 col-md-3">
                     <div class="header-icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+               
+                                  <a href="" class="text-decoration-none text-black" data-bs-toggle="modal" data-bs-target="#basketModal">
                         <i class="fa-solid fa-basket-shopping"></i>
-                        <i class="fa-regular fa-user"></i>
+                        </a>
+                        <i class="sign">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a class="text-decoration-none text-black" style="font-size: 14px;" href="">@users.FullName</a>
+                                <a class="text-decoration-none text-black" style="font-size: 14px;"
+                               asp-controller="account" asp-action="LogOut">/Çıxış</a>
+                            }
+                            else
+                            {
+                                <a class="text-decoration-none text-black" style="font-size: 14px;" asp-controller="account" asp-action="login">Login</a>
+                                <a class="text-decoration-none text-black" style="font-size: 14px;"
+                               asp-controller="account" asp-action="register">/ Qeydiyyat</a>
+                            }
+
+                        </i>
+
                     </div>
                 </div>
             </div>
@@ -192,23 +220,23 @@
             <div class="row justify-content-between">
                 <div class="col-lg-2">
                     <h5>ŞİRKƏT</h5>
-                    <a href="">Haqqımızda</a>
-                    <a href="">Mağazalar</a>
-                    <a href="">Əlaqə</a>
+                    <a asp-controller="home" asp-action="about" >Haqqımızda</a>
+                    <a asp-controller="home" asp-action="branches">Mağazalar</a>
+                    <a asp-controller="home" asp-action="contact">Əlaqə</a>
                 </div>
                 <div class="col-lg-2">
                     <h5>HESAB</h5>
                     <a href="">Hesabım</a>
-                    <a href="">Hesab yarat</a>
-                    <a href="">Sifarişlər</a>
+                    <a asp-controller="account" asp-action="register">Hesab yarat</a>
+                    <a asp-controller="order" asp-action="checkout">Sifarişlər</a>
                     <a href="">Bonuslar</a>
                 </div>
                 <div class="col-lg-2">
                     <h5>ALICILAR</h5>
-                    <a href="">FAQ</a>
-                    <a href="">Geri qaytarma</a>
-                    <a href="">Şərtlər və Qaydalar</a>
-                    <a href="">Gizlilik siyasəti</a>
+                    <a asp-controller="home" asp-action="faq">FAQ</a>
+                    <a asp-controller="home" asp-action="refund">Geri qaytarma</a>
+                    <a asp-controller="home" asp-action="conditions">Şərtlər və Qaydalar</a>
+                    <a asp-controller="home" asp-action="privacy">Gizlilik siyasəti</a>
                 </div>
                 <div class="col-lg-2">
                     <h5>DƏSTƏK</h5>
@@ -218,10 +246,10 @@
                 </div>
                 <div class="col-lg-4">
                     <h5>ABUNƏ OL</h5>
-                    <form class="row" action="">
-                        <input placeholder="E mail daxil edin" type="text">
-                        <button>Göndər</button>
-                    </form>
+                        <form class="row" asp-controller="home" asp-action="Subscribe">
+                              <input placeholder="Email daxil edin" type="email" name="email" value="Email daxil edin" />
+                        <button type="submit">Göndər</button>
+                             </form>
                     <div>
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-instagram"></i>
@@ -232,13 +260,99 @@
             <hr>
         </div>
     </footer>
+    <!-- Modal for Basket start -->
+    <div class="modal fade basket-modal " id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="basketModalLabel">Your Basket</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="modal-basket-count">
+                            Items in your basket: <strong>@basket.BasketItems.Count</strong>
+                        </div>
+                        @foreach (var item in basket.BasketItems)
+                        {
+                            Product product = products.FirstOrDefault(x => x.Id == item.Product.Id);
+                            <div class="row basket-items">
+                                <div class="col-12 col-sm-7 basket-left">
+                                    <div class="basket-img">
+                                        <img src="~/uploads/products/@product.ProductImages.FirstOrDefault(x=>x.PosterStatus==true)?.Image"
+                                         alt="">
+                                    </div>
+                                    <div class="basket-prd-name">
+                                        <p>@product.Name</p>.
+                                    </div>
+                                </div>
+                                <div class="col-8 col-sm-5 basket-right">
+                                    <div class="basket-prd-count">
+                                        <div class="basket-prd-count">
+                                            <div class="minus count-box">
+                                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="count-value count-box">@item.Count</span>
+                                            <div class="plus count-box">
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prd-total-amount">
+                                        <span class="prd-price">@(item.Count * @item.Product.Price)</span>
+                                        <span>₼</span>
+                                        <i class="fa fa-times remove-prd" aria-hidden="true" onclick="removeBasketItem('@product.Id')"></i>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        }
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container">
+                        <div class="row mt-4 mt-sm-0 position-relative">
+                            <div class="col-12 col-sm-6 go-checkout">
+                                <a class="" asp-controller="Order" asp-action="Checkout">CHECKOUT</a>
+                            </div>
+                            <div class="col-12 col-sm-6 go-shop">
+                                <a asp-controller="Product" asp-action="index" asp-route-id="2">BACK TO SHOP</a>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="total-amount">
+                                    <p>Total Amount:</p>
+                                    <span class="total-price">@basket.TotalPrice</span>
+                                    <span>₼</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Basket finish -->
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.1.js"
+           integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b26885e958.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
     <script src="~/assets/js/slick.min.js"></script>
     <script src="~/assets/js/main.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
 </body>
 </html>

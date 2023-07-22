@@ -1,12 +1,16 @@
 ﻿using CiniciFinal.DAL;
+using CiniciFinal.Enums;
 using CiniciFinal.Helpers;
 using CiniciFinal.Models;
 using CiniciFinal.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CiniciFinal.Areas.manage.Controllers
 {
     [Area("manage")]
+    [Authorize(Roles = "Admin,Superadmin")]
+
     public class SettingController : Controller
     {
         private readonly CiniciDbContext _context;
@@ -20,9 +24,7 @@ namespace CiniciFinal.Areas.manage.Controllers
 
         public IActionResult Index(int page = 1, int size = 10)
         {
-            var model = _context.Settings
-                .Skip((page - 1) * 10)
-                .Take(10);
+            var model = _context.Settings;
             return View(PaginatedList<Setting>.Create(model, page, size));
         }
 

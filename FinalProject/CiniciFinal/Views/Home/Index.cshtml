@@ -1,39 +1,43 @@
-﻿<section id="slick">
+﻿@using CiniciFinal.Enums;
+@inject CiniciFinal.Service.LayoutService layoutService
+@{
+    AppUser users = await layoutService.GetUserFullName();
+    BasketVm basket = layoutService.GetBaskets();
+    List<Product> products = layoutService.GetProducts();
+
+}
+@model HomeVM
+@if (TempData["Subscribe"] != null)
+{
+    if ((bool)TempData["Subscribe"] == true)
+    {
+        <input type="hidden" id="subscribeSuccess" />
+    }
+    else
+    {
+        <input type="hidden" id="subscribeError" />
+
+    }
+}
+<section id="slick">
     
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="slider-content">
-                    <div class="slider-items">
-                        <div>
-                            <img src="~/assets/images/main photos/slider1.png" alt="">
+                    @foreach (var item in Model.Sliders)
+                    {
+                        <div class="slider-items">
+                            <div>
+                                <img src="~/uploads/sliders/@item.Image" alt="">
+                            </div>
+                            <div class="slider-words">
+                                <h2>@item.Title1</h2>
+                                <h2>@item.Title2</h2>
+                                <button>@item.ButtonText</button>
+                            </div>
                         </div>
-                        <div class="slider-words">
-                            <h2>YAZ-YAY</h2>
-                            <h2>2020</h2>
-                            <button>Ətraflı</button>
-                        </div>
-                    </div>
-                    <div class="slider-items">
-                        <div>
-                            <img src="~/assets/images/main photos/slider2.png" alt="">
-                        </div>
-                        <div class="slider-words">
-                            <h2>YAZ-YAY</h2>
-                            <h2>2020</h2>
-                            <button>Ətraflı</button>
-                        </div>
-                    </div>
-                    <div class="slider-items">
-                        <div>
-                            <img src="~/assets/images/main photos/slider4.png" alt="">
-                        </div>
-                        <div class="slider-words">
-                            <h2>YAZ-YAY</h2>
-                            <h2>2020</h2>
-                            <button>Ətraflı</button>
-                        </div>
-                    </div>
+                    }
                 </div>
             </div>
         </div>
@@ -46,7 +50,9 @@
         <div class="row justify-content-between">
             <div class="col-lg-4">
                 <div class="section-1-img-div">
-                    <img src="~/assets/images/main photos/Qadin-kollek.png" alt="">
+                    <a asp-controller="shop" asp-action="index" asp-route-gender="1">
+                        <img src="~/assets/images/main photos/Qadin-kollek.png" alt="">
+                    </a>
                 </div>
                 <div class="section-1-h5">
                     <h5>QADIN</h5>
@@ -54,7 +60,9 @@
             </div>
             <div class="col-lg-4">
                 <div class="section-1-img-div">
-                    <img src="~/assets/images/main photos/Kisi-kollek.png" alt="">
+                    <a asp-controller="shop" asp-action="index" asp-route-gender="2">
+                        <img src="~/assets/images/main photos/Kisi-kollek.png" alt="">
+                    </a>
                 </div>
                 <div class="section-1-h5">
                     <h5>KİŞİ</h5>
@@ -62,7 +70,10 @@
             </div>
             <div class="col-lg-4">
                 <div class="section-1-img-div">
-                    <img src="~/assets/images/main photos/Usaq-kollek.png" alt="">
+                    <a asp-controller="shop" asp-action="index" asp-route-gender="3">
+                        <img src="~/assets/images/main photos/Usaq-kollek.png" alt="">
+
+                    </a>
                 </div>
                 <div class="section-1-h5">
                     <h5>UŞAQ</h5>
@@ -106,9 +117,11 @@
         </div>
         <div class="row">
             <div class="slider-content2">
-                <div class="slider-items2 col-lg-3">
+       @*        @foreach (var item in Model)
+                {
+                                    <div class="slider-items2 col-lg-3">
                     <div>
-                        <div><img src="~/assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
+                            <div><img src="~/assets/images/products/@item.ProductImages.FirstOrDefault(x=>x.PosterStatus==true)?.Image" alt=""></div>
                     </div>
                     <div>
                         <h5>Silversun Uşaq Kombinezon</h5>
@@ -116,67 +129,21 @@
                         <span>₼ 48,50</span>
                     </div>
                 </div>
-                <div class="slider-items2 col-lg-3">
-                    <div>
-                        <div><img src="~/assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <h5>Silversun Uşaq Kombinezon</h5>
-                        <p>Kod:84494</p>
-                        <span>₼ 48,50</span>
-                    </div>
-                </div>
-                <div class="slider-items2 col-lg-3">
-                    <div>
-                        <div><img src="~/assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <h5>Silversun Uşaq Kombinezon</h5>
-                        <p>Kod:84494</p>
-                        <span>₼ 48,50</span>
-                    </div>
-                </div>
-                <div class="slider-items2 col-lg-3">
-                    <div>
-                        <div><img src="~/assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <h5>Silversun Uşaq Kombinezon</h5>
-                        <p>Kod:84494</p>
-                        <span>₼ 48,50</span>
-                    </div>
-                </div>
-                <div class="slider-items2 col-lg-3">
-                    <div>
-                        <div><img src="~/assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <h5>Silversun Uşaq Kombinezon</h5>
-                        <p>Kod:84494</p>
-                        <span>₼ 48,50</span>
-                    </div>
-                </div>
-                <div class="slider-items2 col-lg-3">
-                    <div>
-                        <div><img src="~/assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <h5>Silversun Uşaq Kombinezon</h5>
-                        <p>Kod:84494</p>
-                        <span>₼ 48,50</span>
-                    </div>
-                </div>
-                <div class="slider-items2 col-lg-3">
-                    <div>
-                        <div><img src="~/assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                    </div>
-                    <div>
-                        <h5>Silversun Uşaq Kombinezon</h5>
-                        <p>Kod:84494</p>
-                        <span>₼ 48,50</span>
-                    </div>
-                </div>
+                }*@
             </div>
         </div>
     </div>
 </section>
+
+@section Scripts{
+                               <script>
+            $(document).ready(function () {
+                if ($("#subscribeSuccess").length) {
+                    toastr["success"]("Uğurlu əməliyyət!", "Salam siz artıq səhifədəki yeniliklərdən xəbərdar olacaqsınız")
+                }
+                else if ($("#subscribeError").length) {
+                    toastr["error"]("Xəta baş verdi!", "Bu Email istifadə olunub və ya başqa səbəbdən...")
+                }
+            })
+        </script>
+                    }

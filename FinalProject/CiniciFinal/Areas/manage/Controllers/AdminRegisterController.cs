@@ -1,13 +1,17 @@
-﻿using CiniciFinal.DAL;
+﻿using System.Data;
+using CiniciFinal.DAL;
 using CiniciFinal.Enums;
 using CiniciFinal.Models;
 using CiniciFinal.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CiniciFinal.Areas.manage.Controllers
 {
     [Area("manage")]
+    [Authorize(Roles = "Superadmin")]
+
     public class AdminRegisterController : Controller
     {
         private readonly UserManager<AppUser> _usermanager;

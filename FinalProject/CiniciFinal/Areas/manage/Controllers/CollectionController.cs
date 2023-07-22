@@ -1,14 +1,17 @@
 ﻿using CiniciFinal.DAL;
+using CiniciFinal.Enums;
 using CiniciFinal.Helpers;
 using CiniciFinal.Models;
 using CiniciFinal.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CiniciFinal.Areas.manage.Controllers
 {
 	[Area("manage")]
+    [Authorize(Roles = "Admin,Superadmin")]
 
-	public class CollectionController : Controller
+    public class CollectionController : Controller
     {
 		private readonly CiniciDbContext _context;
 		private readonly IWebHostEnvironment _env;
@@ -22,9 +25,7 @@ namespace CiniciFinal.Areas.manage.Controllers
 
 		public IActionResult Index(int page = 1, int size = 10)
 		{
-			var model = _context.Collections
-				.Skip((page - 1) * 6)
-				.Take(6);
+			var model = _context.Collections;
 			return View(PaginatedList<Collection>.Create(model, page, size));
 		}
 		public IActionResult Create()

@@ -1,18 +1,29 @@
-﻿    <section id="Login">
+﻿@model LoginVm
+
+    <section id="Login">
 
         <div class="login">
-            <div class="email-password-text">
+        <form asp-controller="account" asp-action="login">
+                  <div class="email-password-text">
                 <div class="-main-text">
                     <h6 class="text">HESABA DAXİL OL</h6>
                 </div>
                 <div class="email">
                     <label for="Email">E-poçt</label>
-                    <input type="email" id="Email">
+                 <input asp-for=UserName  placeholder="Username" required>
+                    <span asp-validation-for="UserName" class="text-danger"></span>
                 </div>
                 <div class="password">
                     <label for="Password">Password</label>
-                    <input type="password" id="password">
+                    <input asp-for="Password" placeholder="Password" required>
+                            <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
+                    <div class="form-remember-me">
+        <label for="">
+            <input asp-for="RememberMe" name="" id="">
+            Remember Me
+        </label>
+    </div>
 
             </div>
             <div class="login-button">
@@ -20,11 +31,12 @@
                     <button type="submit" class="btn submit-btn">DAXİL OL</button>
                 </div>
             </div>
+            </form>
             <div class="resert-forgot">
-                <a href=""><span>Şifreni unutmuz?</span></a>
+                <a ><span>Şifreni unutmuz?</span></a>
             </div>
             <div class="register-button">
-                <button class="btn register-btn">QEYDİYYAT</button>
+            <button class="btn register-btn"><a asp-controller="account" asp-action="register">QEYDİYYAT</a></button>
             </div>
         </div>
 

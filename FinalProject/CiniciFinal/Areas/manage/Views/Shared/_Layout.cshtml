@@ -2,6 +2,7 @@
 @inject CiniciFinal.Service.LayoutService layoutService
 @{
     AppUser user = await layoutService.GetUserFullName();
+ 
 
 }
 
@@ -51,6 +52,10 @@
                     <li class="active"><a asp-area="manage" asp-controller="Collection" asp-action="index"><i class="fa fa-dashboard"></i>Collection</a></li>
                     <li class="active"><a asp-area="manage" asp-controller="Focus" asp-action="index"><i class="fa fa-dashboard"></i>Focus</a></li>
                     <li class="active"><a asp-area="manage" asp-controller="Slider" asp-action="index"><i class="fa fa-dashboard"></i>Slider</a></li>
+                    <li class="active"><a asp-area="manage" asp-controller="Contact" asp-action="index"><i class="fa fa-dashboard"></i>Contact</a></li>
+                    <li class="active"><a asp-area="manage" asp-controller="Order" asp-action="index"><i class="fa fa-dashboard"></i>Order</a></li>
+
+
 
 
 
@@ -90,6 +95,7 @@
     <script src="~/manage/assets/js/morris/chart-data-morris.js"></script>
     <script src="~/manage/assets/js/tablesorter/jquery.tablesorter.js"></script>
     <script src="~/manage/assets/js/tablesorter/tables.js"></script>
+    <script src="~/manage/assets/js/main.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
     @RenderSection("Scripts",false)
 

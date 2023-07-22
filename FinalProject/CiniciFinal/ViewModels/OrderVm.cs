@@ -26,6 +26,6 @@ namespace CiniciFinal.ViewModels
         [Required]
         [StringLength(maximumLength: 100)]
         public string City { get; set; }
-        public List<BasketItem>? BasketItems { get; set; }
+        public List<BasketItem> BasketItems { get; set; }
     }
 }

@@ -72,4 +72,19 @@ sizeRadios.forEach(function (radio) {
 });
 
 
-
+function removeBasketItem(itemId) {
+    fetch(`/shop/removebasketitem?id=${itemId}`, {
+        method: 'POST'
+    })
+        .then(response => {
+            if (response.ok) {
+                console.log('Basket item removed');
+                window.location.reload();
+            } else {
+                console.error('Error:', response.statusText);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+}

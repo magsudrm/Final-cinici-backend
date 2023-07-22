@@ -1,22 +1,30 @@
 ﻿using CiniciFinal.DAL;
+using CiniciFinal.Enums;
 using CiniciFinal.Helpers;
 using CiniciFinal.Models;
+using CiniciFinal.Service;
 using CiniciFinal.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace CiniciFinal.Areas.manage.Controllers
 {
 	[Area("manage")]
+    [Authorize(Roles = "Admin,Superadmin")]
+
     public class ProductController : Controller
     {
 		private readonly CiniciDbContext _context;
 		private readonly IWebHostEnvironment _env;
-		public ProductController(CiniciDbContext context, IWebHostEnvironment env)
+        private readonly EmailService _emailService;
+
+        public ProductController(CiniciDbContext context, IWebHostEnvironment env,EmailService emailService)
 		{
 			_context = context;
 			_env = env;
-		}
+            _emailService = emailService;
+        }
 		public IActionResult Index(int page = 1, int size = 4)
 		{
 			var query = _context.Products
@@ -132,7 +140,7 @@ namespace CiniciFinal.Areas.manage.Controllers
 			}
 			if (!_context.Brands.Any(x => x.Id == product.BrandId))
 			{
-				ModelState.AddModelError("BrandId", "Broker not found");
+				ModelState.AddModelError("BrandId", "Brand not found");
 				return;
 			}
 			if (product.PosterFile == null)
@@ -186,7 +194,25 @@ namespace CiniciFinal.Areas.manage.Controllers
 
 			_context.Products.Remove(existProduct);
 			_context.SaveChanges();
-			return RedirectToAction("index");
+            return RedirectToAction("SendMail");
 		}
-	}
+
+
+
+
+        public async Task<IActionResult> SendMail()
+        {
+            List<Subscribe> subscribes = _context.Subscribes.ToList();
+            foreach (Subscribe email in subscribes)
+            {
+                string recipientEmail = email.Email;
+                string subject = "New Product";
+                string body = $"Yeni məhsul əlavə olundu.";
+
+                _emailService.SendEmail(recipientEmail, subject, body);
+            }
+
+            return RedirectToAction("Index");
+        }
+    }
 }

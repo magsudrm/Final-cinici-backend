@@ -1,4 +1,5 @@
-﻿<section class="section-1-shop">
+﻿@model List<Product>
+<section class="section-1-shop">
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
@@ -6,166 +7,22 @@
             </div>
             <div class="col-lg-9">
                 <div class="row">
-                    <div class="col-lg-4">
+                @foreach (var item in Model)
+                    {
+                             <div class="col-lg-4">
                         <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
+                            <div><a asp-controller="shop" asp-action="detail" asp-route-id="@item.Id" >
+                                        <img src="~/uploads/products/@item.ProductImages.First().Image" alt="">
+                            </a></div>
                         </div>
                         <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
+                            <h5>@item.Name</h5>
+                            <p>Kod:@item.Id</p>
+                            <span>₼ @item.Price</span>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <div><img src="assets/images/products/0c9e0fef2a43de0d2a7bcc5c48e7ea9e.jpg" alt=""></div>
-                        </div>
-                        <div>
-                            <h5>Silversun Uşaq Kombinezon</h5>
-                            <p>Kod:84494</p>
-                            <span>₼ 48,50</span>
-                        </div>
-                    </div>
+                    }
+                
                 </div>
             </div>
         </div>

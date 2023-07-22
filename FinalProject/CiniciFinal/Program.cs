@@ -7,6 +7,8 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<LayoutService>();
+builder.Services.AddScoped<EmailService>();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<CiniciDbContext>(opt =>
@@ -20,7 +22,7 @@ builder.Services.ConfigureApplicationCookie(opt =>
         if (context.HttpContext.Request.Path.Value.StartsWith("/manage"))
         {
             var uri = new Uri(context.RedirectUri);
-            context.Response.Redirect("/manage/account/login" + uri.Query);
+            context.Response.Redirect("/manage/adminlogin/login" + uri.Query);
         }
         else
         {

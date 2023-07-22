@@ -48,7 +48,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("BasketItems");
+                    b.ToTable("BasketItems", (string)null);
                 });
 
             modelBuilder.Entity("CiniciFinal.Models.Brand", b =>
@@ -64,7 +64,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Brands");
+                    b.ToTable("Brands", (string)null);
                 });
 
             modelBuilder.Entity("CiniciFinal.Models.Category", b =>
@@ -82,7 +82,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("CiniciFinal.Models.Collection", b =>
@@ -104,7 +104,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Collections");
+                    b.ToTable("Collections", (string)null);
                 });
 
             modelBuilder.Entity("CiniciFinal.Models.ContactUs", b =>
@@ -135,7 +135,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Contacts");
+                    b.ToTable("Contacts", (string)null);
                 });
 
             modelBuilder.Entity("CiniciFinal.Models.Focus", b =>
@@ -160,7 +160,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Focuses");
+                    b.ToTable("Focuses", (string)null);
                 });
 
             modelBuilder.Entity("CiniciFinal.Models.Order", b =>
@@ -199,7 +199,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasIndex("AppUserId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("CiniciFinal.Models.OrderItem", b =>
@@ -234,7 +234,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderItems");
+                    b.ToTable("OrderItems", (string)null);
                 });
 
             modelBuilder.Entity("CiniciFinal.Models.Product", b =>
@@ -289,7 +289,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("CiniciFinal.Models.ProductImage", b =>
@@ -313,7 +313,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductImages");
+                    b.ToTable("ProductImages", (string)null);
                 });
 
             modelBuilder.Entity("CiniciFinal.Models.Setting", b =>
@@ -328,7 +328,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasKey("Key");
 
-                    b.ToTable("Settings");
+                    b.ToTable("Settings", (string)null);
                 });
 
             modelBuilder.Entity("CiniciFinal.Models.Slider", b =>
@@ -363,7 +363,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sliders");
+                    b.ToTable("Sliders", (string)null);
                 });
 
             modelBuilder.Entity("CiniciFinal.Models.Subscribe", b =>
@@ -379,7 +379,7 @@ namespace CiniciFinal.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Subscribes");
+                    b.ToTable("Subscribes", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

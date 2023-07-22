@@ -17,8 +17,17 @@ namespace CiniciFinal.Controllers
             _context = context;
             _userManager = userManager;
         }
-        public IActionResult Index(int gender)
+        public IActionResult Index(int gender, int? CategoryId = null, int? BrandId = null)
         {
+
+
+            ViewBag.Brands = _context.Brands.ToList();
+            ViewBag.Categories = _context.Categories.Include(x => x.Products).Where(x => x.Products.Count > 0).ToList();
+            ViewBag.Products = _context.Products.ToList();
+
+            ViewBag.BrandId = BrandId;
+            ViewBag.CategoryId = CategoryId;
+
             List<Product> products = _context.Products.Include(x => x.ProductImages).ToList();
 
             if (gender == 1)

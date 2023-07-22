@@ -65,7 +65,7 @@ header .sign .mobile-menu-tab-items .mobile-menu-tab-body a {
   width: 68%;
   height: 33rem;
   left: 10%;
-  top: 8%;
+  top: 10%;
   display: none;
 }
 .dropdown-content a {
@@ -89,7 +89,7 @@ header .sign .mobile-menu-tab-items .mobile-menu-tab-body a {
   width: 55%;
   height: 33rem;
   left: 10%;
-  top: 8%;
+  top: 10%;
   display: none;
 }
 .dropdown-content-kisi a {
@@ -113,7 +113,7 @@ header .sign .mobile-menu-tab-items .mobile-menu-tab-body a {
   width: 50%;
   height: 25rem;
   left: 10%;
-  top: 8%;
+  top: 10%;
   display: none;
 }
 .dropdown-content-usaq a {
@@ -137,7 +137,7 @@ header .sign .mobile-menu-tab-items .mobile-menu-tab-body a {
   width: 20%;
   height: 15rem;
   left: 40%;
-  top: 8%;
+  top: 10%;
   padding: 2rem;
   display: none;
 }
@@ -162,7 +162,7 @@ header .sign .mobile-menu-tab-items .mobile-menu-tab-body a {
   width: 20%;
   height: 13rem;
   right: 30%;
-  top: 8%;
+  top: 10%;
   padding: 2rem;
   display: none;
 }
@@ -1237,3 +1237,81 @@ footer .col-lg-4 i:hover {
   display: inline-block;
   vertical-align: top;
 }/*# sourceMappingURL=style.css.map */
+
+/* CSS for the Sidebar */
+.ltn__shop-sidebar {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+}
+
+.ltn__widget-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for the list items */
+.ltn__menu-widget ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+/* Style for the checkbox and label */
+.ltn__menu-widget input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-item {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #333;
+    border-radius: 3px;
+}
+
+.checkbox-item input:checked ~ .checkmark {
+    background-color: #333;
+}
+
+/* Style for the category count */
+.categorey-no {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/* Style for the Filter button */
+.sidebar-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Additional Styles */
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+    .col-lg-3 {
+        width: 100%;
+    }
+}

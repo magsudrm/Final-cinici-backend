@@ -24,7 +24,7 @@ namespace CiniciFinal.Controllers
             return View();
         }
 
-
+        [HttpPost]
         public async Task<IActionResult> Register(RegisterVM account)
         {
             if (!ModelState.IsValid) return Redirect(Request.Headers["Referer"].ToString());
@@ -82,7 +82,7 @@ namespace CiniciFinal.Controllers
             smtp.Credentials = new NetworkCredential("maqsudmuslumov@gmail.com", "rtbiusixtwlfwhcs");
             smtp.Send(mail);
             await _userManager.AddToRoleAsync(user, Roles.User.ToString());
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction(nameof(Login));
 
         }
         public async Task<IActionResult> VerifyEmail(string email, string token)

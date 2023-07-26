@@ -1,5 +1,6 @@
-﻿<section id="Register">
-    <form action="">
+﻿@model RegisterVM
+<section id="Register">
+    <form asp-action="register" method="post">
         <div class="register-text-button-input">
             <div class="text">
                 <h5>QEYDİYYAT</h5>
@@ -13,42 +14,43 @@
                         <label for="Name">
                             Ad
                         </label><br>
-                        <input style="width: 250px; height: 45px;" type="text" placeholder="Adı daxil et" id="Name"><br>
+                        <input asp-for="Firstname" style="width: 250px; height: 45px;"  placeholder="Adı daxil et" id="Name" autocomplete="off"><br>
+                                <label for="Name">
+                           Istifadeçi adı
+                        </label><br>
+                        <input asp-for="Username" style="width: 250px; height: 45px;" placeholder="Istifadeçi adı daxil et" id="Name" autocomplete="off"><br>
                         <label for="Email">
                             E-poçt
                         </label><br>
-                        <input style="width: 250px; height: 45px;" type="email" placeholder="Hello@gmail.com" id="Email"><br>
-                        <label for="">
-                            Şifrə
-                        </label><br>
-                        <input style="width: 250px; height: 45px;" type="password" placeholder="**">
+                        <input asp-for="Email" style="width: 250px; height: 45px;" type="email" placeholder="Hello@gmail.com" id="Email" autocomplete="off"><br>
+                  
                     </div>
                     <div class="lable-right col-6">
                         <label for="">
                             Soyad
                         </label><br>
-                        <input style="width: 250px; height: 45px;" type="text" placeholder="Soyadı daxil et"><br>
-                        <label for="Number">
-                            Telefon
+                        <input asp-for="Lastname" style="width: 250px; height: 45px;" placeholder="Soyadı daxil et" autocomplete="off"><br>
+                        <label for="">
+                            Şifrə
                         </label><br>
-                        <input style="width: 250px; height: 45px;" type="text" placeholder="055 690 16 09" id="Number"><br>
+                        <input asp-for="Password" style="width: 250px; height: 45px;" placeholder="********" autocomplete="off">
                         <label for="">
                             Şifrə təkrarı
                         </label><br>
-                        <input style="width: 250px; height: 45px;" type="password" placeholder="**">
+                        <input asp-for="ConfirmPassword" style="width: 250px; height: 45px;" placeholder="********" autocomplete="off">
                     </div>
+                        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
                 </div>
 
             </div>
         </div>
         <div class="checkbox">
-            <input type="checkbox">
+            <input asp-for="Terms">
             <a href="">"Alıcı razilaşması"</a>
             <span>nin şərtlərini oxudum və şərtlət ilə razıyam</span>
         </div>
-        <div class="register-button">
-            <button class="btn register-btn">QEYDİYYAT</button>
+                    <div class="register-button">
+            <button type="submit" class="btn register-btn">QEYDİYYAT</button>
         </div>
-
     </form>
 </section>

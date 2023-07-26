@@ -64,10 +64,10 @@
                     </div>
                              @foreach (var item in Model.BasketItems)
                 {
-                    <input type="text" name="BasketItems[@Model.BasketItems.IndexOf(item)].ProductId" value="@item.ProductId" />
-                            <input type="text" name="BasketItems[@Model.BasketItems.IndexOf(item)].Count" value="@item.Count" />
-                            <input type="text" name="BasketItems[@Model.BasketItems.IndexOf(item)].Size" value="@item.Size" />
-                    <input type="text" name="BasketItems[@Model.BasketItems.IndexOf(item)].AppUserId" value="@item.AppUserId" />
+                    <input type="hidden" name="BasketItems[@Model.BasketItems.IndexOf(item)].ProductId" value="@item.ProductId" />
+                        <input type="hidden" name="BasketItems[@Model.BasketItems.IndexOf(item)].Count" value="@item.Count" />
+                        <input type="hidden" name="BasketItems[@Model.BasketItems.IndexOf(item)].Size" value="@item.Size" />
+                        <input type="hidden" name="BasketItems[@Model.BasketItems.IndexOf(item)].AppUserId" value="@item.AppUserId" />
 
 
                 }
